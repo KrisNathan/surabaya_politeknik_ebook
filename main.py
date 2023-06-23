@@ -11,7 +11,7 @@ with open("index.html", "r") as f:
         if title_search:
             sstring = title_search.group()
             print(sstring)
-            title = sstring
+            title = sstring.rstrip()
 
         if pdf_search:
             sstring_p = pdf_search.group()
